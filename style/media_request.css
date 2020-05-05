@@ -1,0 +1,12 @@
+@media (max-width: 1024px) {
+
+    .container1 .header .menu {
+        display: none;
+    }
+
+    .container2 .content_cont2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
