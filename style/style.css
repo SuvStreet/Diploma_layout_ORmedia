@@ -448,6 +448,17 @@ body {
     /* position: relative; */
 }
 
+.container5
+    .content_cont5
+    .carousel
+    .owl-carousel
+    .owl-stage-outer
+    .owl-stage
+    .owl-item 
+    .img {
+        max-width: 100%;
+    }
+
 /* .container5
     .content_cont5
     .carousel
@@ -561,7 +572,7 @@ body {
 .container6 .input_cont6 .input_lastName,
 .container6 .input_cont6 .input_tel,
 .container6 .input_cont6 .select_service {
-    width: 190px;
+    width: 50%;
     height: 60px;
     border: 1px solid black;
     border-radius: 6px;
@@ -584,7 +595,7 @@ body {
 }
 
 .container6 .input_cont6 .input_tel {
-    width: 476px;
+    width: calc(100% - 62px);
 }
 
 .container6 .input_cont6 .select_service {

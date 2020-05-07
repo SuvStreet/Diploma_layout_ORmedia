@@ -26,11 +26,14 @@
     .container4 .cards_cont4 {
         justify-content: center;
     }
+    .container2 .content_cont2 .text_cont2 {
+        margin-top: 110px;
+    }
 }
 
 @media (max-width: 1024px) {
-
-    .container1 .header .menu {
+    .container1 .header .menu,
+    .container1 .header .head_right {
         display: none;
     }
     .container2 .content_cont2 {
@@ -41,6 +44,7 @@
     .container2 .content_cont2 .text_cont2 {
         margin-top: 60px;
         margin-right: 0;
+        width: 100%;
     }
     .container2 .content_cont2 .img_cont2 {
         margin-top: 60px;
@@ -63,6 +67,7 @@
         padding-top: 0;
     }
     .container5 .content_cont5 .text_cont5 {
+        width: 100%;
         margin-right: 0;
     }
     .container5 .content_cont5 {
@@ -81,13 +86,30 @@
     }
     .container6 {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    }
+    .container6 .text_content_cont6 {
+        width: 100%;
+    }
+    .container6 .text_content_cont6 p {
+        padding-right: 0;
+        margin-right: 0;
     }
     .container6 .text_content_cont6 h2 {
         padding-top: 60px;
+        padding-bottom: 20px;
     }
     .container6 .input_cont6 {
+        width: 100%;
         margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 678px) {
+    .container1 .text_cont1 h1 {
+        font-size: 65px;
+    }
+    .container1 .text_cont1 p {
+        font-size: 20px;
     }
 }
