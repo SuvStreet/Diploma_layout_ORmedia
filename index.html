@@ -14,17 +14,20 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./style/media_request.css" />
+        <link rel="stylesheet" href="./style/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./style/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="./style/animate.css" />
     </head>
     <body>
         <div class="wrapper">
             <!-- 1 контейнер -->
             <section class="container1">
-                <div class="background_cont1">
+                <!-- <div class="background_cont1">
                     <img
                         src="./img/cont1/background_cont1.png"
                         alt="background"
                     />
-                </div>
+                </div> -->
                 <heder class="header center">
                     <div class="logo">
                         <i class="fas fa-cloud"></i>
@@ -236,25 +239,73 @@
                         </div>
                     </div>
                     <div class="carousel">
-                        <div class="carousel_img">
-                            <img
-                                src="./img/cont5/galleary_1.png"
-                                alt="galleary"
-                            />
-                            <img
-                                src="./img/cont5/galleary_2.png"
-                                alt="galleary"
-                            />
-                            <img
-                                src="./img/cont5/galleary_3.png"
-                                alt="galleary"
-                            />
+                        <div class="owl-carousel">
+                            <div class="img">
+                                <img
+                                    src="./img/cont5/galleary_1.png"
+                                    alt="galleary"
+                                />
+                            </div>
+                            <div class="img">
+                                <img
+                                    src="./img/cont5/galleary_2.png"
+                                    alt="galleary"
+                                />
+                            </div>
+                            <div class="img">
+                                <img
+                                    src="./img/cont5/galleary_3.png"
+                                    alt="galleary"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section></section>
+            <section class="container6 center">
+                <div class="text_content_cont6">
+                    <h2>Contact</h2>
+                    <p>
+                        Questions or concerns? Just fill out the form below and
+                        our support team will get back to you within 24 hours
+                    </p>
+                </div>
+                <div class="input_cont6">
+                    <div class="name">
+                        <input
+                            class="input_firstName"
+                            type="text"
+                            placeholder="First Name"
+                            autocomplete="on"
+                        />
+                        <input
+                            class="input_lastName"
+                            type="text"
+                            placeholder="Last Name"
+                            autocomplete="on"
+                        />
+                    </div>
+                    <input
+                        class="input_tel"
+                        type="tel"
+                        placeholder="Phone Number"
+                        autocomplete="on"
+                    />
+                    <select class="select_service">
+                        <option value="0">Select Service</option>
+                        <option value="1">Australia</option>
+                        <option value="2">Australia</option>
+                        <option value="3">Australia</option>
+                        <option value="4">Australia</option>
+                    </select>
+                    <input
+                        class="btn_submit"
+                        type="submit"
+                        value="Submit Now"
+                    />
+                </div>
+            </section>
 
             <section class="container7">
                 <div class="content_cont7 center">
@@ -298,18 +349,35 @@
                     </div>
                     <div class="we_support">
                         <h2>We Support</h2>
-                        <img src="./img/cont7/visa.png" alt="visa">
-
-
-
-
+                        <img src="./img/cont7/visa.png" alt="visa" />
                     </div>
-
                 </div>
                 <footer class="center">
                     <p>Copyright 2018 CloudBudget</p>
                 </footer>
             </section>
         </div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./script/owl.carousel.min.js"></script>
+        <script src="./script/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script>
+            $(document).ready(function () {
+                $(".owl-carousel").owlCarousel({
+                    items: 1,
+                    loop: true,
+                    stagePadding: 44,
+                    /* margin: -275 */
+                });
+            });
+        </script>
+        <!-- <script src="./script/script.js"></script> -->
     </body>
 </html>

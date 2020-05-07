@@ -1,12 +1,93 @@
+
+@media (max-width: 1233px) {
+    .container3 .cards {
+        justify-content: center;
+        padding-bottom: 190px;
+    }
+    .container3 .content_cont3 .cards .content_card:nth-child(2) {
+        margin-right: 15px;
+    }
+    .container3 .content_cont3 .cards .content_card:first-child {
+        margin-left: 15px;
+    }
+    .container3 .content_cont3 .cards .content_card:last-child {
+        padding-top: 140px;
+    }
+
+}
+
+@media (max-width: 1176px) {
+    .container5 .content_cont5 .text_cont5 h2 {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 1133px) {
+    .container4 .cards_cont4 {
+        justify-content: center;
+    }
+}
+
 @media (max-width: 1024px) {
 
     .container1 .header .menu {
         display: none;
     }
-
     .container2 .content_cont2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container2 .content_cont2 .text_cont2 {
+        margin-top: 60px;
+        margin-right: 0;
+    }
+    .container2 .content_cont2 .img_cont2 {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .container3 .cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container3 .content_cont3 .cards .content_card {
+        margin-right: 0px;
+        margin-bottom: 150px;
+    }
+    .container3 .cards {
+        grid-column-gap: 30px;
+        padding-bottom: 63px;
+    }    
+    .container3 .content_cont3 .cards .content_card:last-child {
+        padding-top: 0;
+    }
+    .container5 .content_cont5 .text_cont5 {
+        margin-right: 0;
+    }
+    .container5 .content_cont5 {
         flex-wrap: wrap;
         justify-content: center;
     }
-
+    .container5 .content_cont5 .text_cont5 h2 {
+        padding-top: 40px;
+    }
+    .container5 .content_cont5 .text_cont5 .icon_shop {
+        padding-bottom: 20px;
+    }
+    .container5 .content_cont5 .carousel {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .container6 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container6 .text_content_cont6 h2 {
+        padding-top: 60px;
+    }
+    .container6 .input_cont6 {
+        margin-top: 60px;
+    }
 }
