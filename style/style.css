@@ -96,17 +96,34 @@ body {
     justify-content: space-between;
 }
 
+.container1 .header .head_right .language .style_select_language .select_language {
+    border-radius: 0;
+    background: transparent;
+    height: 34px;
+    padding: 5px;
+    border: 0;
+    font-size: 14px;
+    -webkit-appearance: none;
+    width: 55px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.container1 .header .head_right .language .style_select_language {
+    height: 34px;
+    background: url(../img/cont1/arrow_select_language.png) no-repeat right;
+    width: 55px;
+}
+
+.container1 .header .head_right .language .style_select_language .select_language:hover,
+.container1 .header .head_right .language .style_select_language .select_language:focus,
+.container1 .header .head_right .language .style_select_language .select_language:active {
+    cursor: pointer;
+    border: 1px #b4b4b4 solid;
+}
+
 .container1 .header .head_right .language img {
     max-width: 100%;
-}
-
-.container1 .header .head_right .language p {
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.container1 .header .head_right .language i {
-    font-size: 18px;
 }
 
 .container1 .header .head_right .btn_login {
@@ -126,10 +143,6 @@ body {
 .container1 .header .head_right .btn_login:focus {
     color: #ffb9b9;
     border-color: #ffb9b9;
-}
-
-.container1 .text_cont1 {
-    top: 257px;
 }
 
 .container1 .text_cont1 h1 {
@@ -197,13 +210,28 @@ body {
     margin-top: 45px;
 }
 
-.container2 .content_cont2 .text_cont2 p span {
+.container2 .content_cont2 .text_cont2 p a {
+    text-decoration: none;
     color: #ed4c5c;
 }
+
+
+
+.container2 .content_cont2 .text_cont2 p a:hover,
+.container2 .content_cont2 .text_cont2 p a:focus,
+.container2 .content_cont2 .text_cont2 p a:active {
+    border-bottom: 1px solid #ffb9b9;
+    color: #ffb9b9;
+    font-weight: 700;
+}
+
+
+
 
 .container2 .content_cont2 .img_cont2 {
     margin-top: 94px;
     margin-bottom: 94px;
+    padding-left: 33px;
 }
 
 .container2 .content_cont2 .img_cont2 .video_cont2 {
@@ -221,7 +249,7 @@ body {
     border-radius: 33px;
     background: #ed4c5c;
     left: -33px;
-    top: 123px;
+    bottom: calc(50% - 33px);
 }
 
 .container2 .content_cont2 .img_cont2 .btn_play i {
@@ -269,8 +297,8 @@ body {
 .container3 .content_cont3 .cards .content_card .wrapper_text_card {
     position: absolute;
     height: 200px;
-    width: 293px;
-    margin-left: 29px;
+    width: 83.43%;
+    margin-left: calc(50% - 146px);
     margin-top: -95px;
     background-color: white;
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
@@ -317,13 +345,53 @@ body {
     .content_card
     .wrapper_text_card
     .text_card
-    h5 {
-    font-size: 12px;
-    line-height: 18px;
+    .link_cont3 {
     text-align: center;
-    color: #ed4c5c;
     padding-top: 20px;
 }
+
+.container3
+    .content_cont3
+    .cards
+    .content_card
+    .wrapper_text_card
+    .text_card
+    .link_cont3
+    a {
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 18px;
+        color: #ed4c5c; 
+    }
+
+    .container3
+    .content_cont3
+    .cards
+    .content_card
+    .wrapper_text_card
+    .text_card
+    .link_cont3
+    a:hover,
+    .container3
+    .content_cont3
+    .cards
+    .content_card
+    .wrapper_text_card
+    .text_card
+    .link_cont3
+    a:focus,
+    .container3
+    .content_cont3
+    .cards
+    .content_card
+    .wrapper_text_card
+    .text_card
+    .link_cont3
+    a:active {
+        border-bottom: 1px solid #ffb9b9;
+        color: #ffb9b9;
+        font-weight: 700;
+    }
 
 .container4 h2 {
     font-weight: bold;
@@ -456,7 +524,7 @@ body {
     .owl-stage
     .owl-item 
     .img {
-        max-width: 100%;
+        max-width: 383px;
     }
 
 /* .container5
@@ -475,15 +543,16 @@ body {
     .owl-carousel
     .owl-stage-outer
     .owl-stage
+    .owl-item
+    +
     .active
-    ~
-    .owl-item {
-        width: 383px !important;
+     {
+        width: 500px !important;
 } */
 
-.minus{
+/* .minus{
     width: 383px !important;
-}
+} */
 
 /*  .container5 .content_cont5 .carousel .owl-carousel .img1 {
     max-width: 84%;
@@ -661,9 +730,9 @@ body {
 }
 
 .container7 .content_cont7 .services {
-    padding-left: 30px;
-    padding-right: 30px;
-    flex-basis: 110px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-basis: 125px;
 }
 
 .container7 .content_cont7 .services h2 {
@@ -725,6 +794,7 @@ body {
 }
 .container7 .content_cont7 .content .email {
     display: inline-block;
+    height: 18px;
 }
 
 .container7 .content_cont7 .content .phone {
@@ -751,6 +821,9 @@ body {
 
 .container7 .content_cont7 .icon_messenger i {
     font-size: 14px;
+}
+.container7 .content_cont7 .we_support {
+    padding-left: 10px;
 }
 
 .container7 .content_cont7 .we_support h2 {

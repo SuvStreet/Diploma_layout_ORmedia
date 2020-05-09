@@ -41,8 +41,14 @@
                     <div class="head_right">
                         <div class="language">
                             <img src="./img/cont1/flag.png" alt="flag" />
-                            <p>EN</p>
-                            <i class="fas fa-caret-down"></i>
+                            <!-- <p>EN</p>
+                            <i class="fas fa-caret-down"></i> -->
+                            <div class="style_select_language">
+                                <select class="select_language">
+                                    <option value="0">EN</option>
+                                    <option value="1">RU</option>
+                                </select>
+                            </div>
                         </div>
 
                         <button type="submit" class="btn_login">LOGIN</button>
@@ -74,7 +80,7 @@
                             to find out more.
                             <br />
                             <br />
-                            <span>Learn More</span>
+                            <a href="#">Learn More</a>
                         </p>
                     </div>
                     <div class="img_cont2">
@@ -109,7 +115,9 @@
                                         We support all popular currencies and is
                                         fully customizable to add
                                     </p>
-                                    <h5>Read More</h5>
+                                    <div class="link_cont3">
+                                        <a href="#">Read More</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +133,9 @@
                                         You can access your account from
                                         anywhere in the world on any device
                                     </p>
-                                    <h5>Read More</h5>
+                                    <div class="link_cont3">
+                                        <a href="#">Read More</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -141,7 +151,9 @@
                                         Our software is made so you can access
                                         and manage your budget
                                     </p>
-                                    <h5>Read More</h5>
+                                    <div class="link_cont3">
+                                        <a href="#">Read More</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -367,12 +379,13 @@
                 $(".owl-carousel").owlCarousel({
                     items: 1,
                     loop: true,
-                    stagePadding: 44,
-                    /* autoWidth: true, */
+                    /* tagePadding: 0, */
+                    autoWidth: true,
                     /* margin: -275 */
                 });
             });
         </script>
+        <script src="./script/href.js"></script>
         <!-- <script src="./script/script.js"></script> -->
     </body>
 </html>

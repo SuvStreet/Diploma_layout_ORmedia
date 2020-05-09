@@ -28,6 +28,8 @@
     }
     .container2 .content_cont2 .text_cont2 {
         margin-top: 110px;
+        width: 50%; 
+        margin-right: 65px;
     }
 }
 
@@ -63,6 +65,12 @@
         grid-column-gap: 30px;
         padding-bottom: 63px;
     }    
+    .container3 .content_cont3 .cards .content_card:first-child {
+        margin-left: 0;
+    }
+    .container3 .content_cont3 .cards .content_card:nth-child(2) {
+        margin-right: 0;
+    }
     .container3 .content_cont3 .cards .content_card:last-child {
         padding-top: 0;
     }
@@ -83,6 +91,7 @@
     .container5 .content_cont5 .carousel {
         padding-top: 40px;
         padding-bottom: 40px;
+        width: 100%;
     }
     .container6 {
         flex-direction: column;
@@ -105,11 +114,108 @@
     }
 }
 
+@media (max-width: 730px) {
+    .container7 .content_cont7 {
+        justify-content: flex-start;
+        padding-bottom: 100px;
+    }
+    .container7 .content_cont7 .address {
+        width: 50%;
+    }
+    .container7 .content_cont7 .services {
+        width: 50%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .container7 .content_cont7 .get_in_touch {
+        width: 50%;
+    }
+    .container7 .content_cont7 .we_support {
+        width: 50%;
+        padding-left: 0;
+    }
+    .container7 .content_cont7 .address address {
+        padding-bottom: 100px;
+    }
+}
+
 @media (max-width: 678px) {
     .container1 .text_cont1 h1 {
         font-size: 65px;
     }
     .container1 .text_cont1 p {
         font-size: 20px;
+        width: 427px;
+        margin-left: calc(50% - 213px);
+    }
+}
+
+@media (max-width: 576px) {
+    .container1 .text_cont1 h1 {
+        font-size: 54px;
+    }
+    .container1 .text_cont1 p {
+        font-size: 16px;
+        width: 370px;
+        margin-left: calc(50% - 185px);
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* МЕТКА, ТАК ОСТАВЛЯТЬ? */
+    .container6 .input_cont6 .name {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .container6 .input_cont6 .input_firstName,
+    .container6 .input_cont6 .input_lastName {
+        width: calc(100% - 62px);
+    }
+    .container6 .input_cont6 .input_lastName {
+        margin-left: 0;
+    }
+    /* МЕТКА, ТАК ОСТАВЛЯТЬ? */
+
+    .container7 .content_cont7 {
+        flex-direction: column;
+    }
+    .container7 .content_cont7 .address address {
+        padding-bottom: 33px;
+    }
+    .container7 .content_cont7 .services .menu {
+        padding-bottom: 33px;
+    }
+    .container7 .content_cont7 .get_in_touch {
+        padding-bottom: 33px;
+    }
+    .container7 .content_cont7 .address,
+    .container7 .content_cont7 .services,
+    .container7 .content_cont7 .get_in_touch,
+    .container7 .content_cont7 .we_support {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .container1 .text_cont1 h1 {
+        font-size: 38px;
+    }
+    .container1 .text_cont1 p {
+        font-size: 12px;
+        width: 280px;
+        margin-left: calc(50% - 140px);
+    }
+}
+
+@media (max-width: 400px) {
+    .container3 .content_cont3 .cards .content_card .wrapper_text_card {
+        width: 234px;
+        margin-left: calc(50% - 117px);
+    }
+    .container3 .content_cont3 .cards .content_card .wrapper_text_card .text_card {
+        padding-top: 33px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
