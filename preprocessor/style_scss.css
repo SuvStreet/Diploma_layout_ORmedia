@@ -1,0 +1,5 @@
+.container1 .header .head_right .language .style_select_language .select_language:hover, .container1 .header .head_right .language .style_select_language .select_language:focus, .container1 .header .head_right .language .style_select_language .select_language:active {
+  cursor: pointer;
+  border: 1px #b4b4b4 solid;
+}
+/*# sourceMappingURL=style_scss.css.map */

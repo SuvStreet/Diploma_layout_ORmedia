@@ -1,0 +1,6 @@
+.container3 .content_cont3 .cards .content_card .wrapper_text_card .text_card .link_cont3 a:hover, .container3 .content_cont3 .cards .content_card .wrapper_text_card .text_card .link_cont3 a:active, .container3 .content_cont3 .cards .content_card .wrapper_text_card .text_card .link_cont3 a:focus {
+  border-bottom: 1px solid #ffb9b9;
+  color: #ffb9b9;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style_sass.css.map */

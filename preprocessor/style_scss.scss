@@ -1,0 +1,21 @@
+$cursor: pointer;
+$border: 1px #b4b4b4 solid;
+
+.container1 {
+    .header {
+        .head_right {
+            .language {
+                .style_select_language {
+                    .select_language {
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            cursor: $cursor;
+                            border: $border;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

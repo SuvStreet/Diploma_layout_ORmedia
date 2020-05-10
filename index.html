@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="./style/owl.carousel.min.css" />
         <link rel="stylesheet" href="./style/owl.theme.default.min.css" />
         <link rel="stylesheet" href="./style/animate.css" />
+        <link rel="stylesheet" href="./preprocessor/style_scss.css">
+        <link rel="stylesheet" href="./preprocessor/style_sass.css">
     </head>
     <body>
         <div class="wrapper">
@@ -28,6 +30,38 @@
                         <h3>CloudBudget</h3>
                     </div>
 
+                    <nav class="menu" id="menu">
+                        <ul>
+                            <li><a href="#">OVERVIEW</a></li>
+                            <li><a href="#">FEATURES</a></li>
+                            <li><a href="#">TECHNOLOGY</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                            <li><a href="#">Sign up</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="head_right">
+                        <div class="language">
+                            <img src="./img/cont1/flag.png" alt="flag" />
+                            <div class="style_select_language">
+                                <select class="select_language">
+                                    <option value="0" id="en">EN</option>
+                                    <option value="1" id="ru">RU</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn_login">LOGIN</button>
+                    </div>
+
+                    <span class="burger" id="burger">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </span>
+                </heder>
+
+                <div class="menu_background" id="menu_background">
                     <nav class="menu">
                         <ul>
                             <li><a href="#">OVERVIEW</a></li>
@@ -41,8 +75,6 @@
                     <div class="head_right">
                         <div class="language">
                             <img src="./img/cont1/flag.png" alt="flag" />
-                            <!-- <p>EN</p>
-                            <i class="fas fa-caret-down"></i> -->
                             <div class="style_select_language">
                                 <select class="select_language">
                                     <option value="0">EN</option>
@@ -53,7 +85,8 @@
 
                         <button type="submit" class="btn_login">LOGIN</button>
                     </div>
-                </heder>
+                </div>
+
                 <div class="text_cont1 center">
                     <h1>CloudBudget</h1>
                     <p>
@@ -65,6 +98,8 @@
                     <button type="submit" class="btn_sign_up">Sign Up</button>
                 </div>
             </section>
+
+            <!-- 2 контейнер -->
             <section class="container2 center">
                 <div class="content_cont2">
                     <div class="text_cont2">
@@ -100,6 +135,7 @@
                 </div>
             </section>
 
+            <!-- 3 контейнер -->
             <section class="container3">
                 <div class="content_cont3 center">
                     <h2>Features</h2>
@@ -161,6 +197,7 @@
                 </div>
             </section>
 
+            <!-- 4 контейнер -->
             <section class="container4 center">
                 <h2>Technology</h2>
                 <div class="cards_cont4">
@@ -225,6 +262,7 @@
                 </div>
             </section>
 
+            <!-- 5 контейнер -->
             <section class="container5">
                 <div class="content_cont5 center">
                     <div class="text_cont5">
@@ -269,6 +307,7 @@
                 </div>
             </section>
 
+            <!-- 6 контейнер -->
             <section class="container6 center">
                 <div class="text_content_cont6">
                     <h2>Contact</h2>
@@ -298,13 +337,16 @@
                         placeholder="Phone Number"
                         autocomplete="on"
                     />
-                    <select class="select_service">
-                        <option value="0">Select Service</option>
-                        <option value="1">Australia</option>
-                        <option value="2">Australia</option>
-                        <option value="3">Australia</option>
-                        <option value="4">Australia</option>
-                    </select>
+                    <div class="style_select_service">
+                        <select class="select_service">
+                            <option value="0">Select Service</option>
+                            <option value="1">Select Service</option>
+                            <option value="2">Select Service</option>
+                            <option value="3">Select Service</option>
+                            <option value="4">Select Service</option>
+                        </select>
+                    </div>
+
                     <input
                         class="btn_submit"
                         type="submit"
@@ -313,6 +355,7 @@
                 </div>
             </section>
 
+            <!-- 7 контейнер -->
             <section class="container7">
                 <div class="content_cont7 center">
                     <div class="address">
@@ -379,13 +422,11 @@
                 $(".owl-carousel").owlCarousel({
                     items: 1,
                     loop: true,
-                    /* tagePadding: 0, */
                     autoWidth: true,
-                    /* margin: -275 */
                 });
             });
         </script>
         <script src="./script/href.js"></script>
-        <!-- <script src="./script/script.js"></script> -->
+        <script src="./script/script.js"></script>
     </body>
 </html>

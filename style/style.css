@@ -96,7 +96,12 @@ body {
     justify-content: space-between;
 }
 
-.container1 .header .head_right .language .style_select_language .select_language {
+.container1
+    .header
+    .head_right
+    .language
+    .style_select_language
+    .select_language {
     border-radius: 0;
     background: transparent;
     height: 34px;
@@ -115,12 +120,27 @@ body {
     width: 55px;
 }
 
-.container1 .header .head_right .language .style_select_language .select_language:hover,
-.container1 .header .head_right .language .style_select_language .select_language:focus,
-.container1 .header .head_right .language .style_select_language .select_language:active {
+/* .container1
+    .header
+    .head_right
+    .language
+    .style_select_language
+    .select_language:hover,
+.container1
+    .header
+    .head_right
+    .language
+    .style_select_language
+    .select_language:focus,
+.container1
+    .header
+    .head_right
+    .language
+    .style_select_language
+    .select_language:active {
     cursor: pointer;
     border: 1px #b4b4b4 solid;
-}
+} */
 
 .container1 .header .head_right .language img {
     max-width: 100%;
@@ -144,6 +164,116 @@ body {
     color: #ffb9b9;
     border-color: #ffb9b9;
 }
+
+/* Работа с бургер меню */
+
+.container1 .burger {
+    display: none;
+}
+
+.container1 .menu_background {
+    display: none;
+    position: absolute;
+    background-color: rgba(237, 76, 92, 0.9);
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+.container1 .menu_background .menu {
+    margin-top: 117px;
+}
+
+.container1 .menu_background .menu ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-row-gap: 5px;
+}
+
+.container1 .menu_background .menu ul li {
+    padding: 5px 0;
+    text-align: end;
+}
+
+.container1 .menu_background .menu ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.container1 .menu_background .menu ul li a:hover,
+.container1 .menu_background .menu ul li a:focus,
+.container1 .menu_background .menu ul li a:active {
+    color: #ffb9b9;
+}
+
+.container1 .menu_background .head_right {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    margin-left: 5%;
+    margin-top: 5px;
+    margin-right: 5%;
+}
+
+.container1 .menu_background .head_right .language {
+    display: flex;
+    align-items: center;
+    width: 96px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.container1
+    .menu_background
+    .head_right
+    .language
+    .style_select_language
+    .select_language {
+    border-radius: 0;
+    background: transparent;
+    height: 34px;
+    padding: 5px;
+    border: 0;
+    font-size: 14px;
+    -webkit-appearance: none;
+    width: 55px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.container1 .menu_background .head_right .language .style_select_language {
+    height: 34px;
+    background: url(../img/cont1/arrow_select_language.png) no-repeat right;
+    width: 55px;
+}
+
+.container1 .menu_background .head_right .btn_login {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 11px 29px;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 5px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.container1 .menu_background .head_right .btn_login:hover,
+.container1 .menu_background .head_right .btn_login:focus {
+    color: #ffb9b9;
+    border-color: #ffb9b9;
+}
+
+/* Работа с бургер меню */
 
 .container1 .text_cont1 h1 {
     font-weight: bold;
@@ -215,8 +345,6 @@ body {
     color: #ed4c5c;
 }
 
-
-
 .container2 .content_cont2 .text_cont2 p a:hover,
 .container2 .content_cont2 .text_cont2 p a:focus,
 .container2 .content_cont2 .text_cont2 p a:active {
@@ -224,9 +352,6 @@ body {
     color: #ffb9b9;
     font-weight: 700;
 }
-
-
-
 
 .container2 .content_cont2 .img_cont2 {
     margin-top: 94px;
@@ -358,13 +483,13 @@ body {
     .text_card
     .link_cont3
     a {
-        text-decoration: none;
-        font-size: 12px;
-        line-height: 18px;
-        color: #ed4c5c; 
-    }
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 18px;
+    color: #ed4c5c;
+}
 
-    .container3
+/* .container3
     .content_cont3
     .cards
     .content_card
@@ -372,7 +497,7 @@ body {
     .text_card
     .link_cont3
     a:hover,
-    .container3
+.container3
     .content_cont3
     .cards
     .content_card
@@ -380,7 +505,7 @@ body {
     .text_card
     .link_cont3
     a:focus,
-    .container3
+.container3
     .content_cont3
     .cards
     .content_card
@@ -388,10 +513,12 @@ body {
     .text_card
     .link_cont3
     a:active {
-        border-bottom: 1px solid #ffb9b9;
-        color: #ffb9b9;
-        font-weight: 700;
-    }
+    border-bottom: 1px solid #ffb9b9;
+    color: #ffb9b9;
+    font-weight: 700;
+} */
+
+/* Старт container4 */
 
 .container4 h2 {
     font-weight: bold;
@@ -469,6 +596,8 @@ body {
     margin-left: 104px;
 }
 
+/* Старт container5 */
+
 .container5 {
     background-color: #ed4c5c;
     color: #ffffff;
@@ -513,7 +642,19 @@ body {
 .container5 .content_cont5 .carousel {
     padding-top: 95px;
     width: 533px;
-    /* position: relative; */
+}
+
+.content_cont5 .owl-item {
+    left: 45px;
+}
+
+.owl-carousel .shows {
+    position: relative;
+    max-width: 100% !important;
+    height: 267px;
+    /* object-fit: cover; */
+    padding-top: 22px;
+    z-index: 100;
 }
 
 .container5
@@ -522,81 +663,23 @@ body {
     .owl-carousel
     .owl-stage-outer
     .owl-stage
-    .owl-item 
+    .owl-item
     .img {
-        max-width: 383px;
-    }
+    width: 445px;
+}
 
-/* .container5
-    .content_cont5
-    .carousel
-    .owl-carousel
-    .owl-stage-outer
-    .owl-stage
-    .owl-item {
-    width: 383px !important;
-} */
-
-/* .container5
+.container5
     .content_cont5
     .carousel
     .owl-carousel
     .owl-stage-outer
     .owl-stage
     .owl-item
-    +
-    .active
-     {
-        width: 500px !important;
-} */
-
-/* .minus{
-    width: 383px !important;
-} */
-
-/*  .container5 .content_cont5 .carousel .owl-carousel .img1 {
-    max-width: 84%;
-    margin: 0 auto;
-} */
-
-/*
-.container5 .content_cont5 .carousel .owl-carousel .img2 {
-    max-width: 74%;
-    margin: 0 auto;
-}
-
-.container5 .content_cont5 .carousel .owl-carousel .img3 {
-    max-width: 74%;
-    margin: 0 auto;
-} */
-
-/* .container5 .content_cont5 .carousel .carousel_img {
-    display: flex;
-    justify-content: center;
-}
-
-.container5 .content_cont5 .carousel .carousel_img img {
-    position: absolute;
-}
-
-.container5 .content_cont5 .carousel .carousel_img img:first-child {
-    max-width: 100%;
-    z-index: 3;
-}
-
-.container5 .content_cont5 .carousel .carousel_img img:last-child {
-    margin-top: 22px;
-    margin-left: 75px;
-    z-index: 2;
+    img {
     max-width: 100%;
 }
 
-.container5 .content_cont5 .carousel .carousel_img img:nth-child(2) {
-    z-index: 1;
-    margin-top: 22px;
-    margin-left: -75px;
-    max-width: 100%;
-} */
+/* Старт container6 */
 
 .container6 {
     display: flex;
@@ -667,20 +750,27 @@ body {
     width: calc(100% - 62px);
 }
 
-.container6 .input_cont6 .select_service {
+.container6 .input_cont6 .style_select_service .select_service {
     width: 100%;
-    padding-right: 0;
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+.container6 .input_cont6 .style_select_service {
+    background: url(../img/cont6/arrow_select_service.png) no-repeat;
+    background-position-x: 94%;
+    background-position-y: 35%;
 }
 
 .container6 .input_cont6 .btn_submit {
     width: 160px;
     height: 50px;
-    background: #ED4C5C;
-    border: 1px solid #ED4C5C;
+    background: #ed4c5c;
+    border: 1px solid #ed4c5c;
     border-radius: 6px;
     font-size: 14px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .container6 .input_cont6 .btn_submit:hover,
@@ -691,16 +781,7 @@ body {
     color: #ffb9b9;
 }
 
-
-
-
-
-
-
-
-
-
-
+/* Старт container7 */
 
 .container7 {
     background-color: #fafafa;

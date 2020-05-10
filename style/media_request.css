@@ -34,6 +34,36 @@
 }
 
 @media (max-width: 1024px) {
+    .container1 .header .logo {
+        position: absolute;
+        z-index: 100;
+    }
+    .container1 .header .burger {
+        display: inline-block;
+        width: 30px;
+        top: 51px;
+        position: absolute;
+        z-index: 100;
+        right: 5%;
+        cursor: pointer;
+        border-radius: 6px;
+        height: 30px;
+        border: 1px solid white;
+    }
+    .container1 .header .burger i{
+        display: block;
+        width: 80%;
+        height: 4px;
+        margin: 3px;
+        background-color: white;
+    }
+    .container1 .header .burger i:first-child {
+        margin-top: 6px;
+    }
+    .container1 .show {
+        display: block;
+    }
+
     .container1 .header .menu,
     .container1 .header .head_right {
         display: none;
@@ -91,7 +121,7 @@
     .container5 .content_cont5 .carousel {
         padding-top: 40px;
         padding-bottom: 40px;
-        width: 100%;
+        max-width: 100%;
     }
     .container6 {
         flex-direction: column;
@@ -115,6 +145,13 @@
 }
 
 @media (max-width: 730px) {
+    .container2 .content_cont2 .img_cont2 .btn_play {
+        width: 56px;
+        height: 56px;
+        border-radius: 28px;
+        left: -28px;
+        bottom: calc(50% - 28px);
+    }
     .container7 .content_cont7 {
         justify-content: flex-start;
         padding-bottom: 100px;
@@ -162,8 +199,6 @@
 }
 
 @media (max-width: 480px) {
-
-    /* МЕТКА, ТАК ОСТАВЛЯТЬ? */
     .container6 .input_cont6 .name {
         flex-direction: column;
         justify-content: flex-start;
@@ -175,8 +210,6 @@
     .container6 .input_cont6 .input_lastName {
         margin-left: 0;
     }
-    /* МЕТКА, ТАК ОСТАВЛЯТЬ? */
-
     .container7 .content_cont7 {
         flex-direction: column;
     }
