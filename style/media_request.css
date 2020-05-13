@@ -211,6 +211,8 @@
         margin-left: 0;
     }
     .container7 .content_cont7 {
+        padding-top: 60px;
+        padding-bottom: 40px;
         flex-direction: column;
     }
     .container7 .content_cont7 .address address {
@@ -227,6 +229,9 @@
     .container7 .content_cont7 .get_in_touch,
     .container7 .content_cont7 .we_support {
         width: 100%;
+    }
+    footer {
+        padding-bottom: 33px;
     }
 }
 
