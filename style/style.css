@@ -8,6 +8,7 @@
 
 body {
     font-family: "Lato", sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
 
@@ -52,6 +53,7 @@ body {
 }
 
 .container1 .header .logo h3 {
+    font-family: "Lato", sans-serif;
     font-weight: bold;
     font-size: 18px;
     text-transform: uppercase;
@@ -278,6 +280,7 @@ body {
 /* Работа с бургер меню */
 
 .container1 .text_cont1 h1 {
+    font-family: "Lato", sans-serif;
     font-weight: bold;
     font-size: 72px;
     text-align: center;
@@ -310,6 +313,11 @@ body {
     cursor: pointer;
 }
 
+.container1 .text_cont1 .btn_sign_up_ru
+{
+    padding: 17px 27px;
+}
+
 .container1 .text_cont1 .btn_sign_up:hover,
 .container1 .text_cont1 .btn_sign_up:focus {
     background-color: #ffb9b9;
@@ -325,6 +333,10 @@ body {
     width: 445px;
     margin-top: 140px;
     margin-right: 125px;
+}
+
+.container2 .content_cont2 .text_cont2_RU {
+    margin-top: 110px;
 }
 
 .container2 .content_cont2 .text_cont2 h2 {
@@ -806,6 +818,7 @@ body {
 }
 
 .container7 .content_cont7 .address address {
+    font-family: "Lato", sans-serif;
     font-size: 12px;
     line-height: 18px;
     padding-bottom: 141px;
@@ -816,6 +829,10 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     flex-basis: 125px;
+}
+
+.container7 .content_cont7 .services_RU {
+    flex-basis: 145px;
 }
 
 .container7 .content_cont7 .services h2 {
@@ -861,6 +878,10 @@ body {
     width: 128px;
 }
 
+.container7 .content_cont7 .get_in_touch .content_RU {
+    width: 135px;
+}
+
 .container7 .content_cont7 .content h2 {
     font-weight: bold;
     font-size: 18px;
@@ -870,6 +891,7 @@ body {
 }
 
 .container7 .content_cont7 .content a {
+    font-family: "Lato", sans-serif;
     font-size: 12px;
     line-height: 14px;
     text-decoration: none;
@@ -885,6 +907,10 @@ body {
     display: inline-block;
 }
 
+.container7 .content_cont7 .content .phone_RU {
+    padding-top: 0;
+}
+
 .container7 .content_cont7 .content .email:hover,
 .container7 .content_cont7 .content .email:focus,
 .container7 .content_cont7 .content .email:active,
@@ -896,6 +922,7 @@ body {
 }
 
 .container7 .content_cont7 .icon_messenger {
+    font-family: "Lato", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -918,6 +945,7 @@ body {
 }
 
 footer {
+    font-family: "Lato", sans-serif;
     font-size: 12px;
     line-height: 18px;
     padding-bottom: 86px;

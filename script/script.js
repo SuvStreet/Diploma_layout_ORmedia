@@ -14,6 +14,19 @@ window.onload = function(){
 document.querySelector('.container5').addEventListener('touchmove', editSlide);
 document.querySelector('.container5').addEventListener('mousemove', editSlide);
 
+/* смена картинки в выборе языка */
+$(document).ready(function(){
+	$('.select_language').on('change', function(){
+  	var url = $(this).find(':selected').data('price');
+    $('.EN').attr('src', url);
+  });
+})
+
+/* смена языка страницы */
+$(".select_language").change(function() {
+    var option = $(this).find('option:selected');
+    window.location.href = option.data('url');
+}); 
 
 document.getElementById('burger').onclick = function(){
     addMenu();
